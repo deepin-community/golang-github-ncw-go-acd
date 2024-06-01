@@ -1,15 +1,26 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-ncw-go-acd
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
+Build-Depends: debhelper (>= 11~),
+               dh-golang,
+               golang-any,
+               golang-github-google-go-querystring-dev,
+               golang-github-stretchr-testify-dev
+Standards-Version: 4.1.4
+Homepage: https://github.com/ncw/go-acd
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-ncw-go-acd
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-ncw-go-acd.git
+XS-Go-Import-Path: github.com/ncw/go-acd
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-ncw-go-acd-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-github-google-go-querystring-dev,
+         golang-github-stretchr-testify-dev
+Description: Go library for accessing Amazon Cloud Drive
+ This library is the basis for acdcli (https://github.com/sgeb/acdcli).
+ .
+ Still work in progress. Focusing on read-only operations at first.

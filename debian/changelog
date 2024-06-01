@@ -1,5 +1,32 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-ncw-go-acd (0.0~git20171120.887eb06-1) unstable; urgency=medium
 
-  * Initial release
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 0.0~git20171120.887eb06
+  * Use debhelper v11
+  * Update to Standards-Version 4.1.4
+    - Use HTTPS URL for d/copyright
+    - Use Priority: optional
+  * Update d/copyright
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Mon, 09 Apr 2018 21:39:02 +0200
+
+golang-github-ncw-go-acd (0.0~git20161119.0.7954f1f-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.0~git20161119.0.7954f1f
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 03 Jan 2017 11:30:21 +0100
+
+golang-github-ncw-go-acd (0.0~git20160921.0.56da839-2) unstable; urgency=medium
+
+  * Build-Depends on golang-any instead of golang-go
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Wed, 30 Nov 2016 16:30:27 +0100
+
+golang-github-ncw-go-acd (0.0~git20160921.0.56da839-1) unstable; urgency=medium
+
+  * Initial release (Closes: #841775)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sun, 23 Oct 2016 14:03:00 +0200
